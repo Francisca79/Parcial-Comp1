@@ -25,8 +25,10 @@ header .titulo{
 .contenido{
     height:70vh;
     display:flex;
+    flex-direction:column;  
+    align-items:center;     
     justify-content:center;
-    align-items:center;
+    text-align:center;
 }
 
 .contenido h1{
@@ -56,3 +58,50 @@ image{
     height:auto;
 }
 
+#resultado{
+    max-height: 350px;   
+    overflow-y: auto;    
+    padding-right: 5px;
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+#resultado::-webkit-scrollbar{
+    width:8px;
+}
+
+#resultado::-webkit-scrollbar-thumb{
+    background:#1e3a8a;
+    border-radius:10px;
+}
+
+#resultado::-webkit-scrollbar-track{
+    background:#e5e7eb;
+}
+
+h1{
+    margin-bottom:20px;
+    font-size:48px;
+}
+
+buscador-libros{
+    width:100%;
+    max-width:600px;
+    margin-top:10px;
+}
+
+#mensaje{
+    font-weight:bold;
+    margin:10px 0;
+    font-size:18px;
+}
+
+.existe{
+    color:green;
+}
+
+.noExiste{
+    color:red;
+}
